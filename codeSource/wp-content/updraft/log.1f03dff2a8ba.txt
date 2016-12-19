@@ -1,0 +1,360 @@
+0000.001 (0) Opened log file at time: Sat, 17 Dec 2016 19:19:08 +0000 on http://leogrambert.fr/front/projets/cercleConvergence
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.29 WP: 4.7 PHP: 7.0.14 (cgi-fcgi, Linux info 3.0 #1337 SMP Tue Jan 01 00:00:00 CEST 2000 all GNU/Linux) MySQL: 5.5.52 WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 31.2M | 34M) multisite: N openssl: OpenSSL 1.0.1t  3 May 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 1697287.3 MB
+0000.005 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.006 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.020 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1481391039, seconds_ago=611309)
+0000.024 (0) Set semaphore last lock (fd) time to 2016-12-17 19:19:08
+0000.025 (0) Semaphore lock (fd) complete
+0000.030 (0) Backup run: resumption=0, nonce=1f03dff2a8ba, begun at=1482002348 (0s ago), job type=backup
+0000.031 (0) Scheduling a resumption (1) after 300 seconds (1482002648) in case this run gets aborted
+0000.059 (0) Checking if we have a zip executable available
+0000.060 (0) Testing: /usr/bin/zip
+0000.068 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.069 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.070 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.071 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.072 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.076 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.077 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.082 (0) Working binary zip found: /usr/bin/zip
+0000.084 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.084 (0) Creation of backups of directories: beginning
+0000.088 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.142 (0) Total entities for the zip file: 712 directories, 3994 files (0 skipped as non-modified), 54.8 MB
+0000.144 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.146 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.148 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.150 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.152 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.153 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.4 MB, 3994 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0002.322 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: size is now: 3.10 MB
+0002.325 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 600 files added (on-disk size: 3202.1 KB)
+0002.327 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 700 files added (on-disk size: 3202.1 KB)
+0002.330 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 800 files added (on-disk size: 3202.1 KB)
+0002.332 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 900 files added (on-disk size: 3202.1 KB)
+0002.335 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1000 files added (on-disk size: 3202.1 KB)
+0002.336 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (14.1 MB, 3994 files batched, 501 (1002) added so far); re-opening (prior size: 3202.1 KB)
+0005.801 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: size is now: 7.40 MB
+0005.805 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1100 files added (on-disk size: 7568.2 KB)
+0005.807 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1200 files added (on-disk size: 7568.2 KB)
+0005.809 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1300 files added (on-disk size: 7568.2 KB)
+0005.811 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1400 files added (on-disk size: 7568.2 KB)
+0005.813 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1500 files added (on-disk size: 7568.2 KB)
+0005.814 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2 MB, 3994 files batched, 501 (1503) added so far); re-opening (prior size: 7568.2 KB)
+0007.981 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1600 files added (on-disk size: 8283.9 KB)
+0007.983 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1700 files added (on-disk size: 8283.9 KB)
+0007.985 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1800 files added (on-disk size: 8283.9 KB)
+0007.988 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 1900 files added (on-disk size: 8283.9 KB)
+0007.990 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2000 files added (on-disk size: 8283.9 KB)
+0007.990 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.9 MB, 3994 files batched, 501 (2004) added so far); re-opening (prior size: 8283.9 KB)
+0010.024 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2100 files added (on-disk size: 9652.4 KB)
+0010.026 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2200 files added (on-disk size: 9652.4 KB)
+0010.028 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2300 files added (on-disk size: 9652.4 KB)
+0010.030 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2400 files added (on-disk size: 9652.4 KB)
+0010.031 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2500 files added (on-disk size: 9652.4 KB)
+0010.032 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.4 MB, 3994 files batched, 501 (2505) added so far); re-opening (prior size: 9652.4 KB)
+0012.485 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: size is now: 11.50 MB
+0012.488 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2600 files added (on-disk size: 11817.2 KB)
+0012.490 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2700 files added (on-disk size: 11817.2 KB)
+0012.492 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2800 files added (on-disk size: 11817.2 KB)
+0012.493 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 2900 files added (on-disk size: 11817.2 KB)
+0012.495 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3000 files added (on-disk size: 11817.2 KB)
+0012.495 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.9 MB, 3994 files batched, 501 (3006) added so far); re-opening (prior size: 11817.2 KB)
+0015.109 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: size is now: 15.00 MB
+0015.112 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3100 files added (on-disk size: 15348.2 KB)
+0015.114 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3200 files added (on-disk size: 15348.2 KB)
+0015.116 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3300 files added (on-disk size: 15348.2 KB)
+0015.118 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3400 files added (on-disk size: 15348.2 KB)
+0015.120 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3500 files added (on-disk size: 15348.2 KB)
+0015.120 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.3 MB, 3994 files batched, 501 (3507) added so far); re-opening (prior size: 15348.2 KB)
+0016.848 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3600 files added (on-disk size: 17648 KB)
+0016.851 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3700 files added (on-disk size: 17648 KB)
+0016.852 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3800 files added (on-disk size: 17648 KB)
+0016.854 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip.tmp: 3900 files added (on-disk size: 17648 KB)
+0018.767 (0) Created plugins zip (0) - 20579.4 KB in 18.7 s (1101.8 KB/s) (SHA1 checksum: 0eba347a3645c05a48362005a70819e4a6db68c5)
+0018.768 (0) Beginning creation of dump of themes (split every: 400 MB)
+0018.772 (0) Total entities for the zip file: 26 directories, 146 files (0 skipped as non-modified), 2.6 MB
+0018.774 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0019.565 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip.tmp: size is now: 1.80 MB
+0019.574 (0) Created themes zip (0) - 1799 KB in 0.8 s (2236.3 KB/s) (SHA1 checksum: c1cd40544a6340028abc358c4bb658c27a55e965)
+0019.575 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0019.576 (0) Looking for candidates to back up in: /homepages/24/d622463324/htdocs/front/projets/cercleConvergence/wp-content/uploads
+0019.577 (0) finding files: 2016: adding to list (1)
+0019.577 (0) finding files: ithemes-security: adding to list (2)
+0019.578 (0) finding files: siteorigin-widgets: adding to list (3)
+0019.578 (0) finding files: wysija: adding to list (4)
+0019.578 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0019.583 (0) Total entities for the zip file: 43 directories, 233 files (0 skipped as non-modified), 1.5 MB
+0019.585 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0019.586 (0) Zip: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0020.554 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip.tmp: size is now: 1.60 MB
+0020.567 (0) Created uploads zip (0) - 1601.4 KB in 1 s (1620.7 KB/s) (SHA1 checksum: 05635d0fbcaef8b97cd88e13fff8b55cffa78abb)
+0020.569 (0) Beginning backup of other directories found in the content directory (index: 0)
+0020.569 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0020.570 (0) Looking for candidates to back up in: /homepages/24/d622463324/htdocs/front/projets/cercleConvergence/wp-content
+0020.570 (0) finding files: index.php: adding to list (1)
+0020.571 (0) finding files: themes: skipping: this is the themes directory
+0020.571 (0) finding files: languages: adding to list (2)
+0020.571 (0) finding files: upgrade: skipping: excluded by options
+0020.572 (0) finding files: advanced-cache.php: adding to list (3)
+0020.572 (0) finding files: wp-cache-config.php: adding to list (4)
+0020.573 (0) finding files: cache: skipping: excluded by options
+0020.573 (0) finding files: uploads: skipping: this is the uploads directory
+0020.573 (0) finding files: updraft: skipping: this is the updraft directory
+0020.574 (0) finding files: plugins: skipping: this is the plugins directory
+0020.576 (0) Total entities for the zip file: 3 directories, 41 files (0 skipped as non-modified), 3.3 MB
+0020.885 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip.tmp: size is now: 1.00 MB
+0020.894 (0) Created others zip (0) - 989.2 KB in 0.3 s (3095.8 KB/s) (SHA1 checksum: c48e51abc28991f239b623b6c21eeac3a93a5b4d)
+0020.899 (0) Saving backup status to database (elements: 8)
+0020.902 (0) Beginning creation of database dump (WordPress DB)
+0020.904 (0) Testing: /usr/bin/mysqldump
+0020.919 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `loum_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nC (truncated - 1232 bytes total)
+0020.921 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0020.974 (0) Table loum_options: Total expected rows (approximate): 673
+0021.002 (0) Table loum_options: Total rows added: 669 in 0.03 seconds
+0021.004 (0) Table loum_options: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_options.table.gz - 65.1 KB)
+0021.009 (0) Table loum_users: Total expected rows (approximate): 4
+0021.012 (0) Table loum_users: Total rows added: 4 in 0.00 seconds
+0021.013 (0) Table loum_users: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_users.table.gz - 0.8 KB)
+0021.019 (0) Table loum_usermeta: Total expected rows (approximate): 95
+0021.024 (0) Table loum_usermeta: Total rows added: 95 in 0.00 seconds
+0021.027 (0) Table loum_usermeta: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_usermeta.table.gz - 2.6 KB)
+0021.033 (0) Table loum_commentmeta: Total expected rows (approximate): 0
+0021.037 (0) Table loum_commentmeta: Total rows added: 0 in 0.00 seconds
+0021.038 (0) Table loum_commentmeta: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_commentmeta.table.gz - 0.4 KB)
+0021.046 (0) Table loum_comments: Total expected rows (approximate): 4
+0021.059 (0) Table loum_comments: Total rows added: 4 in 0.01 seconds
+0021.061 (0) Table loum_comments: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_comments.table.gz - 1 KB)
+0021.071 (0) Table loum_links: Total expected rows (approximate): 0
+0021.080 (0) Table loum_links: Total rows added: 0 in 0.01 seconds
+0021.083 (0) Table loum_links: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_links.table.gz - 0.4 KB)
+0021.094 (0) Table loum_postmeta: Total expected rows (approximate): 636
+0021.156 (0) Table loum_postmeta: Total rows added: 636 in 0.06 seconds
+0021.157 (0) Table loum_postmeta: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_postmeta.table.gz - 43.3 KB)
+0021.161 (0) Table loum_posts: Total expected rows (approximate): 348
+0021.202 (0) Table loum_posts: Total rows added: 348 in 0.04 seconds
+0021.204 (0) Table loum_posts: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_posts.table.gz - 37.3 KB)
+0021.209 (0) Table loum_term_relationships: Total expected rows (approximate): 28
+0021.212 (0) Table loum_term_relationships: Total rows added: 28 in 0.00 seconds
+0021.212 (0) Table loum_term_relationships: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_term_relationships.table.gz - 0.4 KB)
+0021.215 (0) Table loum_term_taxonomy: Total expected rows (approximate): 3
+0021.219 (0) Table loum_term_taxonomy: Total rows added: 3 in 0.00 seconds
+0021.220 (0) Table loum_term_taxonomy: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_term_taxonomy.table.gz - 0.4 KB)
+0021.224 (0) Table loum_termmeta: Total expected rows (approximate): 0
+0021.227 (0) Table loum_termmeta: Total rows added: 0 in 0.00 seconds
+0021.228 (0) Table loum_termmeta: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_termmeta.table.gz - 0.4 KB)
+0021.233 (0) Table loum_terms: Total expected rows (approximate): 3
+0021.236 (0) Table loum_terms: Total rows added: 3 in 0.00 seconds
+0021.237 (0) Table loum_terms: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_terms.table.gz - 0.4 KB)
+0021.240 (0) Table loum_blc_filters: Total expected rows (approximate): 0
+0021.243 (0) Table loum_blc_filters: Total rows added: 0 in 0.00 seconds
+0021.244 (0) Table loum_blc_filters: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_filters.table.gz - 0.3 KB)
+0021.247 (0) Table loum_blc_instances: Total expected rows (approximate): 29
+0021.249 (0) Table loum_blc_instances: Total rows added: 29 in 0.00 seconds
+0021.250 (0) Table loum_blc_instances: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_instances.table.gz - 1.1 KB)
+0021.253 (0) Table loum_blc_links: Total expected rows (approximate): 17
+0021.256 (0) Table loum_blc_links: Total rows added: 17 in 0.00 seconds
+0021.257 (0) Table loum_blc_links: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_links.table.gz - 5.1 KB)
+0021.260 (0) Table loum_blc_synch: Total expected rows (approximate): 23
+0021.262 (0) Table loum_blc_synch: Total rows added: 23 in 0.00 seconds
+0021.263 (0) Table loum_blc_synch: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_synch.table.gz - 0.6 KB)
+0021.266 (0) Table loum_em_bookings: Total expected rows (approximate): 0
+0021.267 (0) Table loum_em_bookings: Total rows added: 0 in 0.00 seconds
+0021.268 (0) Table loum_em_bookings: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_bookings.table.gz - 0.5 KB)
+0021.271 (0) Table loum_em_events: Total expected rows (approximate): 1
+0021.273 (0) Table loum_em_events: Total rows added: 1 in 0.00 seconds
+0021.274 (0) Table loum_em_events: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_events.table.gz - 0.9 KB)
+0021.277 (0) Table loum_em_locations: Total expected rows (approximate): 1
+0021.279 (0) Table loum_em_locations: Total rows added: 1 in 0.00 seconds
+0021.279 (0) Table loum_em_locations: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_locations.table.gz - 0.6 KB)
+0021.282 (0) Table loum_em_meta: Total expected rows (approximate): 0
+0021.284 (0) Table loum_em_meta: Total rows added: 0 in 0.00 seconds
+0021.284 (0) Table loum_em_meta: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_meta.table.gz - 0.4 KB)
+0021.287 (0) Table loum_em_tickets: Total expected rows (approximate): 0
+0021.289 (0) Table loum_em_tickets: Total rows added: 0 in 0.00 seconds
+0021.289 (0) Table loum_em_tickets: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_tickets.table.gz - 0.4 KB)
+0021.292 (0) Table loum_em_tickets_bookings: Total expected rows (approximate): 0
+0021.294 (0) Table loum_em_tickets_bookings: Total rows added: 0 in 0.00 seconds
+0021.294 (0) Table loum_em_tickets_bookings: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_tickets_bookings.table.gz - 0.4 KB)
+0021.297 (0) Table loum_itsec_lockouts: Total expected rows (approximate): 0
+0021.299 (0) Table loum_itsec_lockouts: Total rows added: 0 in 0.00 seconds
+0021.300 (0) Table loum_itsec_lockouts: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_lockouts.table.gz - 0.4 KB)
+0021.303 (0) Table loum_itsec_log: Total expected rows (approximate): 554
+0021.316 (0) Table loum_itsec_log: Total rows added: 554 in 0.01 seconds
+0021.318 (0) Table loum_itsec_log: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_log.table.gz - 8.9 KB)
+0021.321 (0) Table loum_itsec_temp: Total expected rows (approximate): 25
+0021.325 (0) Table loum_itsec_temp: Total rows added: 25 in 0.00 seconds
+0021.326 (0) Table loum_itsec_temp: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_temp.table.gz - 0.7 KB)
+0021.337 (0) Table loum_redirection_404: Total expected rows (approximate): 9
+0021.341 (0) Table loum_redirection_404: Total rows added: 9 in 0.00 seconds
+0021.342 (0) Table loum_redirection_404: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_404.table.gz - 0.7 KB)
+0021.346 (0) Table loum_redirection_groups: Total expected rows (approximate): 2
+0021.351 (0) Table loum_redirection_groups: Total rows added: 2 in 0.00 seconds
+0021.352 (0) Table loum_redirection_groups: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_groups.table.gz - 0.4 KB)
+0021.356 (0) Table loum_redirection_items: Total expected rows (approximate): 0
+0021.358 (0) Table loum_redirection_items: Total rows added: 0 in 0.00 seconds
+0021.358 (0) Table loum_redirection_items: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_items.table.gz - 0.5 KB)
+0021.362 (0) Table loum_redirection_logs: Total expected rows (approximate): 0
+0021.364 (0) Table loum_redirection_logs: Total rows added: 0 in 0.00 seconds
+0021.364 (0) Table loum_redirection_logs: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_logs.table.gz - 0.4 KB)
+0021.368 (0) Table loum_wysija_campaign: Total expected rows (approximate): 1
+0021.370 (0) Table loum_wysija_campaign: Total rows added: 1 in 0.00 seconds
+0021.371 (0) Table loum_wysija_campaign: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_campaign.table.gz - 0.4 KB)
+0021.374 (0) Table loum_wysija_campaign_list: Total expected rows (approximate): 1
+0021.376 (0) Table loum_wysija_campaign_list: Total rows added: 1 in 0.00 seconds
+0021.376 (0) Table loum_wysija_campaign_list: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_campaign_list.table.gz - 0.3 KB)
+0021.380 (0) Table loum_wysija_custom_field: Total expected rows (approximate): 0
+0021.382 (0) Table loum_wysija_custom_field: Total rows added: 0 in 0.00 seconds
+0021.382 (0) Table loum_wysija_custom_field: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_custom_field.table.gz - 0.3 KB)
+0021.385 (0) Table loum_wysija_email: Total expected rows (approximate): 2
+0021.388 (0) Table loum_wysija_email: Total rows added: 2 in 0.00 seconds
+0021.389 (0) Table loum_wysija_email: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email.table.gz - 6.3 KB)
+0021.393 (0) Table loum_wysija_email_user_stat: Total expected rows (approximate): 1
+0021.394 (0) Table loum_wysija_email_user_stat: Total rows added: 1 in 0.00 seconds
+0021.395 (0) Table loum_wysija_email_user_stat: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email_user_stat.table.gz - 0.3 KB)
+0021.398 (0) Table loum_wysija_email_user_url: Total expected rows (approximate): 0
+0021.399 (0) Table loum_wysija_email_user_url: Total rows added: 0 in 0.00 seconds
+0021.400 (0) Table loum_wysija_email_user_url: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email_user_url.table.gz - 0.3 KB)
+0021.403 (0) Table loum_wysija_form: Total expected rows (approximate): 1
+0021.405 (0) Table loum_wysija_form: Total rows added: 1 in 0.00 seconds
+0021.406 (0) Table loum_wysija_form: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_form.table.gz - 0.9 KB)
+0021.409 (0) Table loum_wysija_list: Total expected rows (approximate): 2
+0021.412 (0) Table loum_wysija_list: Total rows added: 2 in 0.00 seconds
+0021.412 (0) Table loum_wysija_list: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_list.table.gz - 0.5 KB)
+0021.415 (0) Table loum_wysija_queue: Total expected rows (approximate): 0
+0021.417 (0) Table loum_wysija_queue: Total rows added: 0 in 0.00 seconds
+0021.417 (0) Table loum_wysija_queue: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_queue.table.gz - 0.3 KB)
+0021.424 (0) Table loum_wysija_url: Total expected rows (approximate): 0
+0021.426 (0) Table loum_wysija_url: Total rows added: 0 in 0.00 seconds
+0021.426 (0) Table loum_wysija_url: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_url.table.gz - 0.3 KB)
+0021.429 (0) Table loum_wysija_url_mail: Total expected rows (approximate): 0
+0021.431 (0) Table loum_wysija_url_mail: Total rows added: 0 in 0.00 seconds
+0021.431 (0) Table loum_wysija_url_mail: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_url_mail.table.gz - 0.3 KB)
+0021.434 (0) Table loum_wysija_user: Total expected rows (approximate): 4
+0021.436 (0) Table loum_wysija_user: Total rows added: 4 in 0.00 seconds
+0021.437 (0) Table loum_wysija_user: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user.table.gz - 0.7 KB)
+0021.440 (0) Table loum_wysija_user_field: Total expected rows (approximate): 2
+0021.442 (0) Table loum_wysija_user_field: Total rows added: 2 in 0.00 seconds
+0021.443 (0) Table loum_wysija_user_field: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_field.table.gz - 0.5 KB)
+0021.446 (0) Table loum_wysija_user_history: Total expected rows (approximate): 0
+0021.448 (0) Table loum_wysija_user_history: Total rows added: 0 in 0.00 seconds
+0021.448 (0) Table loum_wysija_user_history: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_history.table.gz - 0.3 KB)
+0021.452 (0) Table loum_wysija_user_list: Total expected rows (approximate): 6
+0021.454 (0) Table loum_wysija_user_list: Total rows added: 6 in 0.00 seconds
+0021.454 (0) Table loum_wysija_user_list: finishing file (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_list.table.gz - 0.4 KB)
+0021.458 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_options.table.gz (1/44): adding to final database dump
+0021.473 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_users.table.gz (2/44): adding to final database dump
+0021.474 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_usermeta.table.gz (3/44): adding to final database dump
+0021.475 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_commentmeta.table.gz (4/44): adding to final database dump
+0021.476 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_comments.table.gz (5/44): adding to final database dump
+0021.477 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_links.table.gz (6/44): adding to final database dump
+0021.478 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_postmeta.table.gz (7/44): adding to final database dump
+0021.496 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_posts.table.gz (8/44): adding to final database dump
+0021.507 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_term_relationships.table.gz (9/44): adding to final database dump
+0021.507 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_term_taxonomy.table.gz (10/44): adding to final database dump
+0021.508 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_termmeta.table.gz (11/44): adding to final database dump
+0021.508 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_terms.table.gz (12/44): adding to final database dump
+0021.509 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_filters.table.gz (13/44): adding to final database dump
+0021.509 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_instances.table.gz (14/44): adding to final database dump
+0021.510 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_links.table.gz (15/44): adding to final database dump
+0021.511 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_blc_synch.table.gz (16/44): adding to final database dump
+0021.511 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_bookings.table.gz (17/44): adding to final database dump
+0021.512 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_events.table.gz (18/44): adding to final database dump
+0021.512 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_locations.table.gz (19/44): adding to final database dump
+0021.513 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_meta.table.gz (20/44): adding to final database dump
+0021.513 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_tickets.table.gz (21/44): adding to final database dump
+0021.513 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_em_tickets_bookings.table.gz (22/44): adding to final database dump
+0021.514 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_lockouts.table.gz (23/44): adding to final database dump
+0021.514 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_log.table.gz (24/44): adding to final database dump
+0021.517 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_itsec_temp.table.gz (25/44): adding to final database dump
+0021.518 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_404.table.gz (26/44): adding to final database dump
+0021.519 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_groups.table.gz (27/44): adding to final database dump
+0021.520 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_items.table.gz (28/44): adding to final database dump
+0021.521 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_redirection_logs.table.gz (29/44): adding to final database dump
+0021.521 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_campaign.table.gz (30/44): adding to final database dump
+0021.522 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_campaign_list.table.gz (31/44): adding to final database dump
+0021.522 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_custom_field.table.gz (32/44): adding to final database dump
+0021.523 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email.table.gz (33/44): adding to final database dump
+0021.524 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email_user_stat.table.gz (34/44): adding to final database dump
+0021.525 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_email_user_url.table.gz (35/44): adding to final database dump
+0021.525 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_form.table.gz (36/44): adding to final database dump
+0021.526 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_list.table.gz (37/44): adding to final database dump
+0021.527 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_queue.table.gz (38/44): adding to final database dump
+0021.527 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_url.table.gz (39/44): adding to final database dump
+0021.528 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_url_mail.table.gz (40/44): adding to final database dump
+0021.528 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user.table.gz (41/44): adding to final database dump
+0021.529 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_field.table.gz (42/44): adding to final database dump
+0021.529 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_history.table.gz (43/44): adding to final database dump
+0021.530 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db-table-loum_wysija_user_list.table.gz (44/44): adding to final database dump
+0021.531 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz: finished writing out complete database file (144 KB)
+0021.537 (0) Total database tables backed up: 44 (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz, size: 179548, checksum (SHA1): f27d5004f66ca3bb5b3023ca93cb91a32e109453)
+0021.541 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0021.542 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0021.542 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0021.543 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip: others: This file has not yet been successfully uploaded: will queue
+0021.544 (0) backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz: db: This file has not yet been successfully uploaded: will queue
+0021.544 (0) Saving backup history. Total backup size: 24.6 MB
+0021.546 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0021.549 (0) Cloud backup selection (1/1): dropbox (last)
+0021.549 (0) Beginning dispatch of backup to remote (dropbox)
+0021.550 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0021.553 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0022.382 (0) Dropbox quota usage: used=47.2 MB, total=2048 MB, available=2000.8 MB
+0022.383 (0) Dropbox: Attempt to upload: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip to: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip
+0023.853 (0) Dropbox chunked upload: 5 % uploaded (AAAAAAAAAew6jTovjFxAGg, 1048576, 6144 KB)
+0027.565 (0) Dropbox chunked upload: 34.8 % uploaded (AAAAAAAAAew6jTovjFxAGg, 7340032, 10240 KB)
+0032.740 (0) Dropbox chunked upload: 84.6 % uploaded (AAAAAAAAAew6jTovjFxAGg, 17825792, 10240 KB)
+0035.118 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAew6jTovjFxAGg, 21073356, 10240 KB)
+0036.292 (0) Recording as successfully uploaded: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip (e81d1c0feb9c07c32147fbbadefb2990)
+0036.300 (0) Deleting local file: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip: OK
+0036.301 (0) Dropbox: File upload success (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-plugins.zip): 20579 KB in 13s (1478 KB/s)
+0037.030 (0) Dropbox quota usage: used=67.3 MB, total=2048 MB, available=1980.7 MB
+0037.030 (0) Dropbox: Attempt to upload: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip to: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip
+0038.528 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAe1OOw_mnhE-xg, 1842227, 10240 KB)
+0040.196 (0) Recording as successfully uploaded: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip (925afb1f4c49cc79bf4f1cbdb9d2a72f)
+0040.199 (0) Deleting local file: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip: OK
+0040.199 (0) Dropbox: File upload success (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-themes.zip): 1799 KB in 3s (567 KB/s)
+0040.942 (0) Dropbox quota usage: used=69 MB, total=2048 MB, available=1979 MB
+0040.943 (0) Dropbox: Attempt to upload: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip to: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip
+0042.529 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAe6Y0bGiFo_4Eg, 1639798, 10240 KB)
+0044.187 (0) Recording as successfully uploaded: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip (73e07061c5cd95eb1f01f0213493b3f2)
+0044.190 (0) Deleting local file: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip: OK
+0044.191 (0) Dropbox: File upload success (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-uploads.zip): 1601 KB in 3s (493 KB/s)
+0044.947 (0) Dropbox quota usage: used=70.6 MB, total=2048 MB, available=1977.4 MB
+0044.948 (0) Dropbox: Attempt to upload: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip to: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip
+0046.389 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAe_w9ExUwMjfNQ, 1012939, 10240 KB)
+0049.106 (0) Recording as successfully uploaded: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip (aad8abe7a92cb0becfff2f6bbe99e2e6)
+0049.110 (0) Deleting local file: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip: OK
+0049.111 (0) Dropbox: File upload success (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-others.zip): 989 KB in 4s (237 KB/s)
+0049.832 (0) Dropbox quota usage: used=71.6 MB, total=2048 MB, available=1976.4 MB
+0049.833 (0) Dropbox: Attempt to upload: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz to: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz
+0051.192 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAfDJY8ee4gkVNA, 179548, 10240 KB)
+0052.418 (0) Recording as successfully uploaded: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz (294326511921909b874226aa0cea2697)
+0052.420 (0) Deleting local file: backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz: OK
+0052.421 (0) Dropbox: File upload success (backup_2016-12-17-2019_Cercle_Convergence_1f03dff2a8ba-db.gz): 175 KB in 2s (67 KB/s)
+0052.422 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0052.423 (0) Number of backup sets in history: 2; groups (db): 1
+0052.424 (0) Examining (for databases) backup set with group_id=0, nonce=1f03dff2a8ba, datestamp=1482002348 (Dec 17 2016 19:19:08)
+0052.424 (0) This backup set is the backup set just made, so will not be deleted.
+0052.425 (0) Examining (for databases) backup set with group_id=0, nonce=4106b4170fe4, datestamp=1481391039 (Dec 10 2016 17:30:39)
+0052.425 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0052.425 (0) Number of backup sets in history: 2; groups (files): 1
+0052.426 (0) Examining (for files) backup set with nonce=1f03dff2a8ba, datestamp=1482002348 (Dec 17 2016 19:19:08)
+0052.426 (0) This backup set is the backup set just made, so will not be deleted.
+0052.426 (0) This backup set is the backup set just made, so will not be deleted.
+0052.427 (0) This backup set is the backup set just made, so will not be deleted.
+0052.427 (0) This backup set is the backup set just made, so will not be deleted.
+0052.427 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0052.427 (0) Examining (for files) backup set with nonce=4106b4170fe4, datestamp=1481391039 (Dec 10 2016 17:30:39)
+0052.427 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0052.428 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0052.430 (0) Resume backup (1f03dff2a8ba, 0): finish run
+0052.431 (0) Decremented the semaphore (fd) by 1
+0052.432 (0) Semaphore (fd) unlocked
+0052.433 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0052.435 (0) The backup apparently succeeded and is now complete
+0052.436 (0) Fetching RSS news feed
+0052.529 (0) Fetched RSS news feed; result is a: SimplePie
+0052.540 (0) Sending email ('Fichiers et base de données (Sauvegarde complète)') report (attachments: 0, size: 0 KB) to: leogr...
+0052.683 (0) La sauvegarde a manifestement réussie et est maintenant terminée.
