@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Title</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="projet-5-cercle-convergence-changelog">Projet 5 - Cercle Convergence - Changelog</h1>
+
+<p><strong>16.12.2016</strong> : Séance de mentorat.</p>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Création d’une <a href="http://leogrambert.fr/front/projets/cercleConvergence/pagequinexistepas">page 404 personnalisée</a> grâce à un fichier du thème enfant “404.php”.</p>
+
+<pre><code>&lt;div id="primary"&gt;
+    &lt;div id="content" class="clearfix"&gt;
+        &lt;section class="error-404 not-found"&gt;
+            &lt;div class="page-content"&gt;
+                &lt;?php if ( ! dynamic_sidebar( 'spacious_error_404_page_sidebar' ) ) : ?&gt;
+                    &lt;header class="page-header"&gt;
+                        &lt;h2 class="page-title"&gt;&lt;?php _e( 'Oops ! Quelque chose ne va pas !', 'spacious' ); ?&gt;&lt;/h2&gt;
+                        &lt;img src="/front/projets/cercleConvergence/wp-content/uploads/2016/12/quatrecentquatre-600x253.png" alt="page_404" title="page_404" id="img404"/&gt;
+                    &lt;/header&gt;
+                    &lt;p&gt;
+                        &lt;?php _e( 'Il semblerait que la page que vous cherchez n\'existe pas. L\'administrateur du site est sur le coup.&lt;br/&gt; En attendant, essayez le formulaire de recherche ci-dessous', 'spacious' ); ?&gt;
+                    &lt;/p&gt;
+                    &lt;?php get_search_form(); ?&gt;
+                    &lt;p&gt;
+                        &lt;?php _e('Et si vous ne trouvez pas ce que vous recherchez, ce n\'est pas la fin du monde ! &lt;a href="http://leogrambert.fr/front/projets/cercleConvergence/contact/"&gt;Contactez-nous&lt;/a&gt; !'); ?&gt;
+                    &lt;/p&gt;
+                    &lt;a href="/"&gt;&lt;button&gt;Retour à l'accueil&lt;/button&gt;&lt;/a&gt;
+
+                    &lt;?php endif; ?&gt;
+
+            &lt;/div&gt;&lt;!-- .page-content --&gt;
+        &lt;/section&gt;&lt;!-- .error-404 --&gt;
+    &lt;/div&gt;&lt;!-- #content --&gt;
+&lt;/div&gt;&lt;!-- #primary --&gt;
+</code></pre>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Les éléments du footer sont équilibrés sur toute la longueur de la page.</p>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Suppression de l’effet flash sur le menu de navigation lors du scroll vers le bas. Utilisation de la propriété CSS ‘transition’ dans mon script jQuery.</p>
+
+<pre><code>j(window).scroll(function(){
+    var scrollTop = 1;
+    if(j(window).scrollTop() &gt;= scrollTop){
+        j('#header-text-nav-container').css({
+            transition: '.8s all',
+            position : 'fixed',
+            top : '0',
+            left:'0',
+            backgroundColor:'white',
+            zIndex:'1',
+            width:'100%',
+            opacity:'inherit'
+        });
+    }
+    if(j(window).scrollTop() &lt; scrollTop){
+        j('#header-text-nav-container').removeAttr('style');
+    }
+    scrollTop = scrollTop + 600;
+    if(j(window).scrollTop() &lt;= scrollTop){
+        j('#header-text-nav-container').css({
+            transition:'.8s opacity',
+            opacity:'0.9'
+        })
+    }
+})
+</code></pre>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Nouveau système de pagination sur la page ‘Essais’. Utilisation de l’extension WP-PageNavi. Personnalisation du css, je n’ai pas voulu utiliser la feuille de style fournie par l’extension.</p>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : La modale sur la page d’accueil (contactez-nous) est centrée dans la largeur.</p>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Script différent sur la page d’accueil et sur les autres pages.  <br>
+Intérêts : avoir le menu de navigation légèrement transparent lors du scroll sur la première partie de la page d’accueil (on aperçoit la photo d’en tête sous le menu). Sur les autres pages, n’ayant pas de photo d’en tête, cet effet est inutile (Il nuit même à la lisibilité du menu). <br>
+Comment : modification du fichier enfant “function.php”. Si l’utilisateur est sur la page d’accueil, un script se lance. Sinon, un autre script se lance.</p>
+
+<pre><code>//call js
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_script' );
+function custom_enqueue_script() {
+    if(is_front_page()){
+        wp_enqueue_script( 'script_homepage', get_bloginfo('stylesheet_directory') . '/js/script_homepage.js',
+        array('jquery'), '', true );
+    } else {
+        wp_enqueue_script( 'script_otherpages', get_bloginfo('stylesheet_directory') . '/js/script_otherpages.js',
+        array('jquery'), '', true );
+    }
+}
+</code></pre>
+
+<hr>
+
+<p><strong>16.12.2016</strong> : Interface de connexion <br>
+Script jQuery -&gt; Lors du click sur ‘S’enregistrer’, le formulaire de login disparaît. Il est remplacé par le formulaire permettant de créer un compte. Lors du click sur ‘Annuler’, ce formulaire (register) disparaît et le formulaire de login réapparaît.</p>
+
+<pre><code>   //Form register in place of login form
+   j('.lwa-links-register-inline').click(function(){
+         j('.lwa-form').css('display', 'none');
+   })
+   j('.lwa-links-register-inline-cancel').click(function(){
+         j('.registerform').css('display', 'none');
+         j('.lwa-form').css('display', 'block');
+   })
+</code></pre>
+
+<hr>
+
+<p><strong>17.12.2016</strong> : Les catégories ne sont plus affichées sous les articles. Elles sont cachées grâce à du css (display:none).</p>
+
+<hr>
+
+<p><strong>17.12.2016</strong> : Utilisation de la fonction jQuery.noConflict() dans mes scripts.</p>
+
+<pre><code>var j = jQuery.noConflict();
+</code></pre>
+
+<hr>
+
+<p><strong>17.12.2016</strong> : Les erreurs 404 sont enregistrées dans une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/errors404.html">errors404.html</a> <br>
+Mon script php est inséré dans mon fichier du thème enfant ‘404.php’. Il est donc chargé à chaque fois qu’une page 404 est générée. Le script enregistre un message d’information dans la page errors404.html. Le message est personnalisé suivant que l’utilisateur a cliqué sur un lien mort ou a inscrit une mauvaise adresse URL. <br>
+Lorsque la taille de la page dépasse 15 000 octets, elle est automatiquement vidée. <br>
+A noter que le lien vers cette page est inséré dans le menu déroulant ‘Mon Compte’ de l’administrateur du site et lui permet de voir si des URL sont récurrentes.</p>
+
+<pre><code>    &lt;?php
+     date_default_timezone_set('Europe/Paris');
+     $date = date("d-m-Y");
+     $heure = date("H:i");
+     $stat = stat('errors404.html');
+     $sizeDoc = $stat['size'];
+
+     $referer = $_SERVER['HTTP_REFERER'];
+
+     if ($referer != ''){
+         $failuremess = "Le " . $date . " a " . $heure . " :&lt;br/&gt; Un utilisateur a essaye d'aller a la page &lt;strong&gt;" . $_SERVER['REQUEST_URI'] . " &lt;/strong&gt;et a recu une erreur 404 (page not found).&lt;br/&gt; Il venait de l'url : ". $referer . "&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;";
+     } else {
+         $failuremess = "Le " . $date . " a " . $heure . " :&lt;br/&gt; Un utilisateur a essaye d'aller a la page &lt;strong&gt;" . $_SERVER['REQUEST_URI'] . " &lt;/strong&gt;et a recu une erreur 404 (page not found).&lt;br/&gt; L'utilisateur a directement inscrit le nom de la page dans l'URL.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;";
+     }
+
+     if ($sizeDoc &gt; 15000) {
+        unlink('errors404.html');
+        $errors404 = fopen('errors404.html', 'a+');
+        fgets($errors404);
+        fputs($errors404, $failuremess);
+        fclose($errors404);
+    } else {
+        $errors404 = fopen('errors404.html', 'r+');
+        fgets($errors404);
+        fputs($errors404, $failuremess);
+        fclose($errors404);
+    }
+
+?&gt;
+</code></pre>
+
+<hr>
+
+<p><strong>20.12.2016</strong> : Formulaire de contact et formulaire d’adhésion centrés dans la page.</p>
+
+<hr>
+
+<p><strong>20.12.2016</strong> : Barre d’administration de wordpress visible uniquement pour les administrateurs. Quand une personne s’inscrit sur le site, la barre wordpress n’apparaît pas. (modification du fichier “functions.php” du thème enfant)</p>
+
+<pre><code>if (!current_user_can('manage_options')) {
+    add_filter('show_admin_bar', '__return_false');
+}
+if (!current_user_can('edit_posts')) {
+    add_filter('show_admin_bar', '__return_false');
+}
+</code></pre>
+
+<hr>
+
+<p><strong>20.12.2016</strong> : Personnalisation du placeholder du titre pour l’ajout d’un nouvel article. (modification du fichier “functions.php” du thème enfant) <br>
+Plusieurs petites personnalisations de l’interface d’administration (le logo wordpress n’apparaît plus, le texte de Wordpress dans le footer de l’interface d’administration n’apparaît plus, …)</p>
+
+<pre><code>//article title
+function title_text_input( $title ){
+    return $title = 'Inscrivez le titre de votre Essai';
+}
+add_filter( 'enter_title_here', 'title_text_input' );
+
+//Remove Wordpress Footer Credits
+function wpc_remove_footer_admin(){
+    return "";
+}
+add_filter('admin_footer_text', 'wpc_remove_footer_admin');
+
+//Enable full TinyMCE by default
+add_filter('tiny_mce_before_init', 'wpc_myformatTinyMCE');
+function wpc_myformatTinyMCE($in){
+    $in['wordpress_adv_hidden'] = FALSE;
+    return $in;
+}
+
+//hide wordpress logo admin bar
+function remove_wp_logo( $wp_admin_bar ) {
+    $wp_admin_bar-&gt;remove_node( 'wp-logo' );
+}
+add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
+</code></pre>
+
+<hr>
+
+<p><strong>20.12.2016</strong> : Suppression de la barre blanche sous le footer.</p>
+
+<hr>
+
+<p><strong>20.12.2016</strong> : Ajout d’une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/wp-login.php">wp-login.php</a> personnalisée pour se démarquer de la page classique wordpress.</p>
+
+<pre><code>//css login page
+function custom_login_css()  {
+    echo '&lt;link rel="stylesheet" type="text/css" href="/front/projets/cercleConvergence/wp-content/themes/spacious_child/design/style-login.css" /&gt;';
+}
+add_action('login_head', 'custom_login_css');
+</code></pre>
+
+<p><a href="http://leogrambert.fr/front/projets/cercleConvergence/wp-content/themes/spacious_child/design/style-login.css">Stylesheet</a></p>
+
+<hr>
+
+<p><strong>22.12.2016</strong> : Ajout d’un script sur la page d’administration pour modifier le bouton d’ajout d’un article dans le back.  <br>
+Le script n’est chargé que si l’utilisateur est un contributeur. Le bouton ‘Soumettre à relecture’ est remplacé par ‘Soumettre’. De plus, un texte d’aider apparaît sous ce bouton. <br>
+Quand l’utilisateur a un autre rôle, le bouton ne change pas et reste ‘Publier’.</p>
+
+<pre><code>const ROLE_CONTRIBUTOR = "contributor";
+
+//call js admin
+add_action( 'admin_enqueue_scripts', 'enqueue_admin_script' );
+$currentUser = wp_get_current_user();
+$rolesCaps = $currentUser-&gt;get_role_caps();
+
+if(array_key_exists(ROLE_CONTRIBUTOR, $rolesCaps) === true) {
+    function enqueue_admin_script() {
+        wp_enqueue_script( 'script_admin', get_bloginfo('stylesheet_directory') . '/js/script_admin.js',
+        array('jquery'), '', true );
+    }
+}
+</code></pre>
+
+<hr>
+
+<p><strong>23.12.2016</strong> : Séance de mentorat.</p>
+
+<hr>
+
+<p><strong>23.12.2016</strong> : Ajout du changelog dans le footer (uniquement pendant la phase de dev). Permet au client, et au mentor, de suivre l’avancement des modifications.</p>
+
+<hr>
+
+<p><strong>26.12.2016</strong> : Modification du menu de navigation. Personnalisation suivant le statut du visiteur. <br>
+Le contributeur peut désormais avoir accès à un onglet “Ecrire un essai” qui le redirige vers le formulaire d’ajout de formulaire. Dans l’onglet “Mon compte”, il peut supprimer un de ses essai, modifier son profil, ou se déconnecter. <br>
+L’administrateur et les éditeurs ont désormais un onglet “Gestion essais” où ils peuvent valider, écrire, supprimer un essai. Ils peuvent également gérer les commentaires. Dans l’onglet “Mon compte”, ils retrouvent toutes les autres fonctionnalités (éditer une page, paramétrer les newsletters, gérer les erreurs 404, …)</p></div></body>
+</html>
