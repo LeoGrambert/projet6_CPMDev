@@ -3,17 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Title</title>
+<title>Changelog - Cercle Convergence</title>
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body><div class="container"><h1 id="projet-5-cercle-convergence-changelog">Projet 5 - Cercle Convergence - Changelog</h1>
 
+<h4>Quelques fonctionnalités développées :</h4>
+<ul>
+	<li>Modale sur la page d'accueil - <a href="#creation">Cliquez ici</a></li>
+	<li>Page 404 personnalisée et outil de suivi des erreurs - <a href="#404">Cliquez ici</a> ou <a href="#errors404"> Cliquez ici</a></li>
+	<li>Le script chargé n'est pas le même suivant la page - <a href="#differentScript">Cliquez ici</a></li>
+	<li>Travail sur l'interface de connexion - <a href="#connexion">Cliquez ici</a> ou <a href="#wordpressLogin">Cliquez ici</a></li>
+	<li>Personnalisation de l'interface d'administration - <a href="#admin1">Cliquez ici</a> ou <a href="#admin3">Cliquez ici</a> ou <a href="#admin4">Cliquez ici</a></li>
+	<li>Slider page d'accueil - <a href="#slider">Cliquez ici</a></li>
+</ul>
+
+<hr style="border:1px solid black;">
+
+<h4>Ou bien retrouvez l'historique complet du projet :</h4>
+
+<p><strong>10.12.2016</strong> : Rendez-vous avec l’association. Début du projet.</p>
+
+<hr>
+
+<p id="creation"><strong>10.12.2016 au 16.12.2016</strong> : Création du site, choix et personnalisation (via un thème enfant) du thème Spacious, intégration des principales pages, … <br>
+Création d’une modale sur la page d’accueil lors du click sur le bouton “contactez-nous”</p>
+
+<pre><code>  //Modal - form contact
+function showModal(){
+   var id = '#modal';
+   resizeModal();
+   j('#background').show(300);
+   j(id).show(600);
+   j('.hideModal').click(function (e) {
+      e.preventDefault();
+      hideModal();
+    });
+}
+
+function hideModal(){
+   j('#background').hide(400);
+   j('.popup').hide(200);
+}
+
+function resizeModal(){
+   var modal = j('#modal');
+   var winH = j(document).height();
+   var winW = j(window).width();
+   j('#background').css({'width':winW,'height':winH});
+   var winH = j(window).height();
+   modal.css('top', winH/2.1 - modal.height()/2);
+   modal.css('left', winW/2.1 - modal.width()/2);
+   modal.css('marginBottom', '15%');
+}
+
+   j('#showButton').click(function (e) {
+        e.preventDefault();
+      showModal();
+   });
+
+   j('input[type="submit"]').click(function(){
+     j('#modal').css('height', '85%').css('top', '10px');
+   })
+
+   j('#background').click(function () {
+      hideModal();
+    });
+
+    j('.hideModal').hover(function(){
+      j('.hideModal').css('cursor', 'pointer');
+    }).mouseout(function(){
+      j('.hideModal').css('cursor', 'auto');
+    })
+
+    j('.hideModal').click(function () {
+       hideModal();
+     });
+
+   j(window).resize(function () {
+      resizeModal()
+   });
+</code></pre>
+
+<p id="members">Création d’un espace membre grâce à l’extension Members. <br>
+Création d’une interface de connexion grâce à l’extension Login With Ajax.</p>
+
+<hr>
+
 <p><strong>16.12.2016</strong> : Séance de mentorat.</p>
 
 <hr>
 
-<p><strong>16.12.2016</strong> : Création d’une <a href="http://leogrambert.fr/front/projets/cercleConvergence/pagequinexistepas">page 404 personnalisée</a> grâce à un fichier du thème enfant “404.php”.</p>
+<p id="404"><strong>16.12.2016</strong> : Création d’une <a href="http://leogrambert.fr/front/projets/cercleConvergence/pagequinexistepas">page 404 personnalisée</a> grâce à un fichier du thème enfant “404.php”.</p>
 
 <pre><code>&lt;div id="primary"&gt;
     &lt;div id="content" class="clearfix"&gt;
@@ -86,7 +168,7 @@
 
 <hr>
 
-<p><strong>16.12.2016</strong> : Script différent sur la page d’accueil et sur les autres pages.  <br>
+<p id="differentScript"><strong>16.12.2016</strong> : Script différent sur la page d’accueil et sur les autres pages.  <br>
 Intérêts : avoir le menu de navigation légèrement transparent lors du scroll sur la première partie de la page d’accueil (on aperçoit la photo d’en tête sous le menu). Sur les autres pages, n’ayant pas de photo d’en tête, cet effet est inutile (Il nuit même à la lisibilité du menu). <br>
 Comment : modification du fichier enfant “function.php”. Si l’utilisateur est sur la page d’accueil, un script se lance. Sinon, un autre script se lance.</p>
 
@@ -105,7 +187,7 @@ function custom_enqueue_script() {
 
 <hr>
 
-<p><strong>16.12.2016</strong> : Interface de connexion <br>
+<p id="connexion"><strong>16.12.2016</strong> : Interface de connexion <br>
 Script jQuery -&gt; Lors du click sur ‘S’enregistrer’, le formulaire de login disparaît. Il est remplacé par le formulaire permettant de créer un compte. Lors du click sur ‘Annuler’, ce formulaire (register) disparaît et le formulaire de login réapparaît.</p>
 
 <pre><code>   //Form register in place of login form
@@ -131,7 +213,7 @@ Script jQuery -&gt; Lors du click sur ‘S’enregistrer’, le formulaire de lo
 
 <hr>
 
-<p><strong>17.12.2016</strong> : Les erreurs 404 sont enregistrées dans une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/errors404.html">errors404.html</a> <br>
+<p id="errors404"><strong>17.12.2016</strong> : Les erreurs 404 sont enregistrées dans une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/errors404.html">errors404.html</a> <br>
 Mon script php est inséré dans mon fichier du thème enfant ‘404.php’. Il est donc chargé à chaque fois qu’une page 404 est générée. Le script enregistre un message d’information dans la page errors404.html. Le message est personnalisé suivant que l’utilisateur a cliqué sur un lien mort ou a inscrit une mauvaise adresse URL. <br>
 Lorsque la taille de la page dépasse 15 000 octets, elle est automatiquement vidée. <br>
 A noter que le lien vers cette page est inséré dans le menu déroulant ‘Mon Compte’ de l’administrateur du site et lui permet de voir si des URL sont récurrentes.</p>
@@ -173,7 +255,7 @@ A noter que le lien vers cette page est inséré dans le menu déroulant ‘Mon 
 
 <hr>
 
-<p><strong>20.12.2016</strong> : Barre d’administration de wordpress visible uniquement pour les administrateurs. Quand une personne s’inscrit sur le site, la barre wordpress n’apparaît pas. (modification du fichier “functions.php” du thème enfant)</p>
+<p id="admin1"><strong>20.12.2016</strong> : Barre d’administration de wordpress visible uniquement pour les administrateurs. Quand une personne s’inscrit sur le site, la barre wordpress n’apparaît pas. (modification du fichier “functions.php” du thème enfant)</p>
 
 <pre><code>if (!current_user_can('manage_options')) {
     add_filter('show_admin_bar', '__return_false');
@@ -185,7 +267,7 @@ if (!current_user_can('edit_posts')) {
 
 <hr>
 
-<p><strong>20.12.2016</strong> : Personnalisation du placeholder du titre pour l’ajout d’un nouvel article. (modification du fichier “functions.php” du thème enfant) <br>
+<p id="admin2"><strong>20.12.2016</strong> : Personnalisation du placeholder du titre pour l’ajout d’un nouvel article. (modification du fichier “functions.php” du thème enfant) <br>
 Plusieurs petites personnalisations de l’interface d’administration (le logo wordpress n’apparaît plus, le texte de Wordpress dans le footer de l’interface d’administration n’apparaît plus, …)</p>
 
 <pre><code>//article title
@@ -220,7 +302,7 @@ add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
 
 <hr>
 
-<p><strong>20.12.2016</strong> : Ajout d’une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/wp-login.php">wp-login.php</a> personnalisée pour se démarquer de la page classique wordpress.</p>
+<p id="wordpressLogin"><strong>20.12.2016</strong> : Ajout d’une page <a href="http://leogrambert.fr/front/projets/cercleConvergence/wp-login.php">wp-login.php</a> personnalisée pour se démarquer de la page classique wordpress.</p>
 
 <pre><code>//css login page
 function custom_login_css()  {
@@ -233,8 +315,8 @@ add_action('login_head', 'custom_login_css');
 
 <hr>
 
-<p><strong>22.12.2016</strong> : Ajout d’un script sur la page d’administration pour modifier le bouton d’ajout d’un article dans le back.  <br>
-Le script n’est chargé que si l’utilisateur est un contributeur. Le bouton ‘Soumettre à relecture’ est remplacé par ‘Soumettre’. De plus, un texte d’aider apparaît sous ce bouton. <br>
+<p id="admin3"><strong>22.12.2016</strong> : Ajout d’un script sur la page d’administration pour modifier le bouton d’ajout d’un article dans le back.  <br>
+Le script n’est chargé que si l’utilisateur est un contributeur. Le bouton ‘Soumettre à relecture’ est remplacé par ‘Soumettre’. De plus, un texte d’aide apparaît sous ce bouton. <br>
 Quand l’utilisateur a un autre rôle, le bouton ne change pas et reste ‘Publier’.</p>
 
 <pre><code>const ROLE_CONTRIBUTOR = "contributor";
@@ -264,5 +346,139 @@ if(array_key_exists(ROLE_CONTRIBUTOR, $rolesCaps) === true) {
 
 <p><strong>26.12.2016</strong> : Modification du menu de navigation. Personnalisation suivant le statut du visiteur. <br>
 Le contributeur peut désormais avoir accès à un onglet “Ecrire un essai” qui le redirige vers le formulaire d’ajout de formulaire. Dans l’onglet “Mon compte”, il peut supprimer un de ses essai, modifier son profil, ou se déconnecter. <br>
-L’administrateur et les éditeurs ont désormais un onglet “Gestion essais” où ils peuvent valider, écrire, supprimer un essai. Ils peuvent également gérer les commentaires. Dans l’onglet “Mon compte”, ils retrouvent toutes les autres fonctionnalités (éditer une page, paramétrer les newsletters, gérer les erreurs 404, …)</p></div></body>
+L’administrateur et les éditeurs ont désormais un onglet “Gestion essais” où ils peuvent valider, écrire, supprimer un essai. Ils peuvent également gérer les commentaires. Dans l’onglet “Mon compte”, ils retrouvent toutes les autres fonctionnalités (éditer une page, paramétrer les newsletters, gérer les erreurs 404, …)</p>
+
+<hr>
+
+<p><strong>29.12.2016</strong> : Séance de mentorat.</p>
+
+<hr>
+
+<p><strong>29.12.2016</strong> : Contenu du footer modifié.  <br>
+4 blocs :</p>
+
+<ul>
+<li>A propos (mentions légales, développeur)</li>
+<li>Contact (Formulaire de contact, icône facebook)</li>
+<li>Newsletter (Formulaire)</li>
+<li>Changelog (uniquement pour la phase de dév)</li>
+</ul>
+
+<hr>
+
+<p><strong>30.12.2016</strong> : Modification de la présentation sur la page d’accueil. <br>
+Décision prise : Un grand extrait de l’essai le plus commenté sur la partie gauche. Un espace de connexion sur la partie droite (qui invite l’utilisateur a écrire son propre essai). Sous cet espace de connexion, une liste des derniers essais.</p>
+
+<hr>
+
+<p><strong>30.12.2016</strong> : Adaptation du menu de navigation suivant la fenêtre pour éviter qu’il ne passe sur 2 lignes. (media queries) <br>
+La taille du titre est réduite à partir de 1279px. <br>
+Le menu déroulant apparaît à partir de 1190px.</p>
+
+<hr>
+
+<p><strong>30.12.2016</strong> : Background-color gris clair sur les champs input des formulaires pour qu’ils soient plus visibles sur le fond blanc (meilleure expérience utilisateur).</p>
+
+<hr>
+
+<p id="admin4"><strong>30.12.2016</strong> : Personnalisation de l’interface d’administration (script jQuery). Les termes ‘Articles’ ont été remplacés par ‘Essais’ pour garder de la cohérence avec le contenu du site.</p>
+
+<pre><code>j('#menu-posts .wp-menu-name').replaceWith('&lt;div class="wp-menu-name"&gt;Essais&lt;/div&gt;');
+
+j('#menu-posts .wp-first-item').replaceWith('&lt;li class="wp-first-item"&gt;&lt;a href="edit.php" class="wp-first-item"&gt;Tous les essais&lt;/a&gt;&lt;/li&gt;');
+
+j('#wpbody-content .wp-heading-inline').replaceWith('&lt;h1 class="wp-heading-inline"&gt;Essais&lt;/h1&gt;');
+
+j('#search-submit').attr('value', 'Rechercher dans les essais');
+</code></pre>
+
+<hr>
+
+<p><strong>30.12.2016</strong> : Personnalisation de l’interface d’administration pour les contributeurs (script jQuery).  <br>
+Tout ce qui n’est pas pertinent a été caché. Ne reste que les onglets ‘Tableau de bord’, ‘Essais’ et ‘Profil’.</p>
+
+<pre><code>j('#dashboard_primary, #dashboard_right_now, .user-admin-bar-front-wrap, .user-rich-editing-wrap, .user-comment-shortcuts-wrap, .publish, .subsubsub .trash, .tablenav, #menu-media, #toplevel_page_wpcf7, #menu-tools, #menu-comments, #wp-content-media-buttons, #page-layout, #postimagediv, #wp-admin-bar-new-content, #wp-admin-bar-comments').css('display', 'none');
+</code></pre>
+
+<hr>
+
+<p><strong>30.12.2016</strong> : Ajout du plugin BAW Delete My Account. L’utilisateur peut désormais supprimer son compte directement depuis son profil. Deux justifications :</p>
+
+<ul>
+<li>Cela fait partie des bonnes pratiques web</li>
+<li>Cela fait gagner du temps à l’administrateur du site qui n’a pas à faire la manipulation manuellement sur demande</li>
+</ul>
+
+<hr>
+
+<p><strong>05.01.2017</strong> : Séance de mentorat.</p>
+
+<hr>
+
+<p><strong>05.01.2017</strong> : Pavé newsletter dans le footer. Ajout d'une marge entre le label et le champ input pour une meilleure lisibilité.</p>
+
+<hr>
+
+<p id="slider"><strong>06.01.2016</strong> : Création d'un slider (script jQuery) sur la page d'accueil. Il affiche les 3 derniers essais publiés sur le site.</p>
+
+<pre><code>//slider
+   var essaiOne = true;
+   var essaiTwo = false;
+   var essaiThree = false;
+   j('.rightArrow').click(function(){
+     if(essaiOne == true){
+       j('.essaiOne').css('display', 'none');
+       j('.essaiTwo').css('display', 'block');
+       j('.postSideTwo').css('backgroundColor', '#EFEFEF');
+       j('.postSideOne').css('backgroundColor', 'transparent');
+       essaiOne = false;
+       essaiTwo = true;
+     } else if (essaiTwo == true) {
+       j('.essaiTwo').css('display', 'none');
+       j('.essaiThree').css('display', 'inline');
+       j('.postSideThree').css('backgroundColor', '#EFEFEF');
+       j('.postSideTwo').css('backgroundColor', 'transparent');
+       essaiTwo = false;
+       essaiThree = true;
+     } else if (essaiThree == true) {
+       j('.essaiThree').css('display', 'none');
+       j('.essaiOne').css('display', 'inline');
+       j('.postSideOne').css('backgroundColor', '#EFEFEF');
+       j('.postSideThree').css('backgroundColor', 'transparent');
+       essaiThree = false;
+       essaiOne = true;
+     }
+   })
+
+   j('.leftArrow').click(function(){
+     if(essaiOne == true){
+       j('.essaiOne').css('display', 'none');
+       j('.essaiThree').css('display', 'block');
+       j('.postSideThree').css('backgroundColor', '#EFEFEF');
+       j('.postSideOne').css('backgroundColor', 'transparent');
+       essaiOne = false;
+       essaiThree = true;
+     } else if (essaiTwo == true) {
+       j('.essaiTwo').css('display', 'none');
+       j('.essaiOne').css('display', 'inline');
+       j('.postSideOne').css('backgroundColor', '#EFEFEF');
+       j('.postSideTwo').css('backgroundColor', 'transparent');
+       essaiTwo = false;
+       essaiOne = true;
+     } else if (essaiThree == true) {
+       j('.essaiThree').css('display', 'none');
+       j('.essaiTwo').css('display', 'inline');
+       j('.postSideTwo').css('backgroundColor', '#EFEFEF');
+       j('.postSideThree').css('backgroundColor', 'transparent');
+       essaiThree = false;
+       essaiTwo = true;
+     }
+   })
+</code></pre>
+
+<hr>
+
+<p><strong>06.01.2017</strong> : Utilisation de l'extension Cookie Notice. Un bandeau apparaît en bas de page informant l'utilisateur sur la présence de cookies.</p></div>
+
+</body>
 </html>
