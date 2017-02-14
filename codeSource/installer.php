@@ -92,19 +92,19 @@ $GLOBALS['REPLACE_LIST']
   ================================================================================================= */
 
 //COMPARE VALUES
-$GLOBALS['FW_CREATED']		= '2017-02-13 15:40:08';
+$GLOBALS['FW_CREATED']		= '2017-02-14 10:34:44';
 $GLOBALS['FW_VERSION_DUP']	= '1.1.30';
 $GLOBALS['FW_VERSION_WP']	= '4.7.2';
-$GLOBALS['FW_VERSION_DB']	= '5.5.53';
+$GLOBALS['FW_VERSION_DB']	= '5.5.54';
 $GLOBALS['FW_VERSION_PHP']	= '7.0.15';
 $GLOBALS['FW_VERSION_OS']	= 'Linux';
 //GENERAL
 $GLOBALS['FW_TABLEPREFIX'] = 'loum_';
 $GLOBALS['FW_URL_OLD'] = 'http://leogrambert.fr/front/projets/cercleConvergence';
 $GLOBALS['FW_URL_NEW'] = '';
-$GLOBALS['FW_PACKAGE_NAME'] = '20170213_cercleconvergence_58a1d358d0da63393170213154008_archive.zip';
+$GLOBALS['FW_PACKAGE_NAME'] = '20170213_cercleconvergence_58a2dd441fd1a1747170214103444_archive.zip';
 $GLOBALS['FW_PACKAGE_NOTES'] = '';
-$GLOBALS['FW_SECURE_NAME'] = '20170213_cercleconvergence_58a1d358d0da63393170213154008';
+$GLOBALS['FW_SECURE_NAME'] = '20170213_cercleconvergence_58a2dd441fd1a1747170214103444';
 $GLOBALS['FW_DBHOST'] = '';
 $GLOBALS['FW_DBHOST'] = empty($GLOBALS['FW_DBHOST']) ? 'localhost' : $GLOBALS['FW_DBHOST'];
 $GLOBALS['FW_DBPORT'] = '';
